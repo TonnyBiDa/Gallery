@@ -1,0 +1,101 @@
+<!-- <input class="search" [(ngModel)]="searchQuery" placeholder="Search for Images">
+<button (click)="searchImages(searchQuery)" type="button">Find Images</button>
+
+<p *ngIf="searching">Fetching Data...</p>
+
+<div *ngFor="let image of images" class="image-container">
+	<img src="{{image.webformatURL }}">
+	<p>Tags: {{image.tags}}</p>
+	<p>User: {{image.user}}</p>
+	<p>Comments: {{image.comments}}</p>
+	<p>Likes: {{image.likes}}</p>
+</div> -->
+
+    
+      
+<!--       <div class="logo">
+        <div id="attribution">All images provided by</div>
+        <a href="https://pixabay.com" target="_blank">
+          <img src= "../assets/img/logo.png" class="pixabayLogo">
+        </a>
+      </div> -->
+    
+
+    
+<!-- <div>
+  <mat-toolbar color="primary">
+    <span><mat-icon>mood</mat-icon></span>
+
+    <span>Yay, Material in Angular 2!</span>
+
+    <button mat-icon-button [mat-menu-trigger-for]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-menu x-position="before" #menu="matMenu">
+    <button mat-menu-item>Option 1</button>
+    <button mat-menu-item>Option 2</button>
+  </mat-menu>
+
+  <mat-card>
+    <button mat-button>All</button>
+    <button mat-raised-button>Of</button>
+    <button mat-raised-button color="primary">The</button>
+    <button mat-raised-button color="accent">Buttons</button>
+  </mat-card>
+
+  <span class="done">
+    <button mat-fab>
+      <mat-icon>check circle</mat-icon>
+    </button>
+  </span>
+</div> -->
+
+
+<div class="container">
+  <div class="main-content">
+<mat-card>
+  <mat-form-field>
+    <div class="logo">
+    <div id="attribution">All images provided by</div>
+    <a href="https://pixabay.com" target="_blank">
+          <img src= "../assets/img/logo.png" class="pixabayLogo">
+        </a>
+      </div>
+    <input class="search" matInput [(ngModel)]="searchQuery"
+    name="search" placeholder="Search for images">
+
+  </mat-form-field>
+  <br>
+  <button (click)="searchImages(searchQuery)"
+    mat-raised-button class="searchButton" type="button">Find Images</button>
+</mat-card>
+
+<div *ngIf="searching">
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+
+
+<mat-card> 
+  <h4 *ngIf="imagesFound" mat-subeader>Results</h4>
+      <div  *ngFor="let image of images" class="image-container">
+      <mat-card class="fix">
+        <a href="{{ image.pageURL }}" target="_bank">
+          <mat-card-header>
+            <div class="avatar" mat-card-avatar [ngStyle]="{'background-image':'url('+ image.userImageURL +')', 'background-size':'40px 40px'}"></div>
+            <mat-card-title>User: {{ image.user }}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="{{image.webformatURL}}">
+          <mat-card-content>
+            <p>Tags: {{ image.tags }}</p>
+            <p>Comments: {{ image.comments }}</p>
+            <p>Likes: {{ image.likes }}</p>
+          </mat-card-content>
+        </a>
+      </mat-card>
+      <br><br>
+  </div>
+</mat-card>
+  </div>
+</div>
+

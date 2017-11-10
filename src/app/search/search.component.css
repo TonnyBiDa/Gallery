@@ -1,0 +1,112 @@
+#search-container{
+	margin-top: 20%;
+}
+
+.search{
+	height: 70px;
+	max-height: 70px;
+	font-size: 3.5em;
+	color: #;
+}
+
+.avatar{
+	margin-bottom: 7px;
+}
+
+.searchButton{
+	background-color: #CA1740;
+	color: #fff;
+	margin-top: 20px;
+}
+
+.image-container{
+  	width: 300px;
+  	min-height: 100px;
+  	max-width: 300px;
+  	margin: 8px;
+  	border-radius: 2px;
+  	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+  	overflow: hidden;
+    display:inline;
+  }
+
+.results{
+	padding: 8px;
+	margin-bottom: 12px;
+}
+
+.main-content{
+    padding-top: 50px;
+}
+
+/*body{
+  background-color: transparent!important;
+}*/
+
+/*h1{
+  color: #333;
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+  font-size: 4.2em;
+  padding-bottom: 0.5em;
+}*/
+
+/*.header{
+  padding-bottom: 3px;
+}*/
+
+/*#title{
+  display: inline-block;
+  font-size: 3.6em;
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+  padding-bottom: 0.5em;
+}*/
+
+.pixabayLogo{
+  width: 200px;
+}
+
+
+
+
+
+/*
+.grid-item {
+  float: left;
+  width: 80px;
+  height: 60px;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+.grid {
+  background: #EEE;
+  max-width: 1200px;
+}
+.grid:after {
+  
+  display: block;
+  clear: both;
+}*/
+
+
+
+
+
+
+.logo{
+  padding-bottom: 24px;
+  text-align: center;
+  float:right;
+  margin-left: 100px;
+}
+
+#attribution{
+  display: block;
+  padding-bottom: 8px;
+
+  
+}
+.mat-form-field{
+  display: inherit;
+
+}
